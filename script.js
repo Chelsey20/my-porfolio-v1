@@ -4,7 +4,7 @@ var swiper = new Swiper(".projects-slider", {
   centeredSlides: true,
   loop: true,
   slidesPerView: 3, // Show 3 slides at a time
-  spaceBetween: 100, // Space between slides
+  spaceBetween: 80, // Space between slides
   coverflowEffect: {
     rotate: 0,
     stretch: 0,
