@@ -1,0 +1,102 @@
+section {
+  padding: 60px 0;
+}
+.color-icon-primary {
+  color: #4b2574;
+}
+.btn-border-primary {
+  border: 2px solid #4b2574;
+  color: #4b2574;
+}
+.card-border-primary {
+  border-color: #4b2574;
+}
+.social-icons i {
+  font-size: 5rem; /* Default size */
+}
+@media (max-width: 768px) {
+  .social-icons i {
+    font-size: 2rem; /* Smaller size on small screens */
+  }
+}
+
+/* .projects-container {
+  max-width: 124rem;
+  padding: 0 1rem;
+  margin: 0 auto;
+} */
+
+.projects-slider {
+  height: auto; /* Adjust to fit content */
+  padding: 2rem 0;
+  position: relative;
+}
+
+.projects-slide {
+  width: 100%; /* Ensures responsiveness */
+  max-width: 25rem; /* Limit slide width */
+  height: auto; /* Fit content */
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects-slide .projects-slide-img img {
+  width: 100%;
+  max-width: 20rem;
+  height: auto;
+  border-radius: 2rem;
+  object-fit: cover;
+}
+
+.swiper-slide-shadow-left,
+.swiper-slide-shadow-right {
+  display: none;
+}
+
+.projects-slider-control {
+  position: relative;
+  bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.projects-slider-control .swiper-button-next {
+  left: 58% !important;
+  transform: translateX(-58%) !important;
+}
+
+.projects-slider-control .slider-arrow {
+  background: var(--white);
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  left: 42%;
+  transform: translateX(-42%);
+  filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1));
+}
+
+.projects-slider-control .slider-arrow ion-icon {
+  font-size: 2rem;
+  color: #222224;
+}
+
+.projects-slider-control .slider-arrow::after {
+  content: "";
+}
+
+.projects-slider-control .swiper-pagination {
+  position: relative;
+  width: 15rem;
+  bottom: 1rem;
+}
+
+.projects-slider-control .swiper-pagination .swiper-pagination-bullet {
+  filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1));
+}
+
+.projects-slider-control .swiper-pagination .swiper-pagination-bullet-active {
+  background: var(--primary);
+}
