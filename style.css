@@ -33,7 +33,6 @@ section {
 /* infinite slider style */
 .slider {
   width: 100%;
-  background-color: #99cced;
   height: calc(var(--height) + 20px);
   mask-image: linear-gradient(to right, transparent, #000 5% 95%, transparent);
 }
