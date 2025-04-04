@@ -32,6 +32,10 @@ section {
   position: relative;
 }
 
+.image-link {
+  cursor: pointer;
+}
+
 .projects-slide {
   width: 100%; /* Ensures responsiveness */
   max-width: 25rem; /* Limit slide width */
