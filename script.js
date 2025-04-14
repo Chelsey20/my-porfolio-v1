@@ -3,13 +3,14 @@ var swiper = new Swiper(".projects-slider", {
   grabCursor: true,
   centeredSlides: true,
   loop: true,
-  slidesPerView: 3, // Show 3 slides at a time
-  spaceBetween: 80, // Space between slides
+  loopAdditionalSlides: 5,
+
   coverflowEffect: {
     rotate: 0,
     stretch: 0,
     depth: 100,
     modifier: 2.5,
+    slideShadows: false,
   },
   pagination: {
     el: ".swiper-pagination",
@@ -18,5 +19,27 @@ var swiper = new Swiper(".projects-slider", {
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
+  },
+
+  slidesPerView: 3, // Show 3 slides at a time
+  spaceBetween: 15, // Space between slides
+
+  breakpoints: {
+    320: {
+      slidesPerView: 1.2, // Shows partial slides for better mobile coverflow illusion
+      spaceBetween: 15,
+    },
+    480: {
+      slidesPerView: 1.5,
+      spaceBetween: 15,
+    },
+    768: {
+      slidesPerView: 2.5,
+      spaceBetween: 15,
+    },
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
   },
 });
